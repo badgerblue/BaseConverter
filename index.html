@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Base Converter">
+  <meta name="author" content="Robert Wilcox">
+
+  <title>Base Converter</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+  <!-- Page Content -->
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h1 class="mt-5">Convert to any base</h1>
+        <p class="lead">Convert any number to different useful formats for developers</p>
+      </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-3 text-center">
+        </div>
+        <div class="col-lg-6 text-center">
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text">Starting Value</span>
+                </div>
+                <input type="number" class="form-control" id="startingValue">
+              </div>
+        </div>
+        <div class="col-lg-3 text-center">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-3 text-center">
+        </div>
+        <div class="col-lg-2 text-center">
+            <!-- Binary -->
+            <div class="custom-control custom-radio">
+                <input type="radio" class="custom-control-input" id="binary" name="defaultExampleRadios" checked>
+                <label class="custom-control-label" for="binary">Binary</label>
+              </div>
+        </div>
+        <div class="col-lg-2 text-center">
+            <!-- Hex -->
+            <div class="custom-control custom-radio">
+                <input type="radio" class="custom-control-input" id="hex" name="defaultExampleRadios">
+                <label class="custom-control-label" for="hex">Hexidecimal</label>
+              </div>
+        </div>
+        <div class="col-lg-2 text-center">
+              <!-- Octal -->
+              <div class="custom-control custom-radio">
+                  <input type="radio" class="custom-control-input" id="octal" name="defaultExampleRadios">
+                  <label class="custom-control-label" for="octal">Octal</label>
+                </div>
+        </div>
+        <div class="col-lg-3 text-center">
+        </div>
+    </div>
+    <br>
+    <div class="row">
+        <div class="col-lg-12 text-center">
+            <button type="button" class="btn btn-primary" onclick="convert()">Convert</button>
+        </div>
+    </div>
+    <br>
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h1 id="result" style="visibility: hidden">hide me</h1>
+    </div>
+  </div>
+
+  <!-- JS dependencies -->
+  <script src="js/script.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
